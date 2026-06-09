@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Poppins-black";
+    src: url("font/Poppins/Poppins-Black.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --green: #4CAF50;
+    --red: #C70626;
+    --black: #000000;
+    --blue: #3348E8;
+    --orange: #FAB437;
+    --bluelight: lightblue;
+
+
+}
+body {
+    font-family: "Poppins-black", sans-serif;
+    background-color: var(--white);
+    line-height: 1.7;
+    min-height: 100vh;
+    background-color: var(--orange);
+}
+/* Style du Title */
+.header{
+    text-align: center;
+
+}
+/* Style du main */
+.main{
+    text-align: center;
+
+}
+.main__form{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bluelight);
+}
+.main__form__label{
+    margin-top: 20px;
+
+}
+.main__form__input{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.main__form__button__ajouter{
+    min-width: 40px;
+    min-height: 40px;
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    border-radius: 20%;
+}
+/* style de la liste */
+.main__liste{
+    display: inline-block;
+    text-align: left;
+    padding-left: 40px;
+}
+/* style des li */
+.main__liste__li{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+/* paragraphe */
+.main__liste__li__p{
+    display: inline-block;
+    text-decoration: none;
+}
+/* style du bouton checkbox */
+.main__liste__checkbox{
+    margin-left: 20px;
+}
+/* style du bouton supprimé */
+.main__liste__delete{
+    color: var(--white);
+    background-color: var(--red);
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20%;
+}
+/* Bouton des filtres */
+.main__button__filter{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.Button__main__button__filter{
+    min-height: 40px;
+    min-width: 40px;
+    flex: 1;
+    margin: 0 10px;
+    border: none;
+    background-color: var(--bluelight);
+    border-radius: 20%;
+}
+/* Style du footer */
+#cookie-banner{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--blue);
+    color: var(--white);
+    padding: 15px;
+    text-align: center;
+    display: none;
+}
+
+#cookie-banner button{
+    background: var(--green);
+    color: var(--white);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+
+}
+
